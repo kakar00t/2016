@@ -1,0 +1,39 @@
+
+Instructivo paso a paso
+
+1.	Ir al sitio http://www.docker.com/products/overview y descargar Docker (Windows, MacOsX, Linux)
+2.	Instalar el archivo correspondiente.
+3.	Iniciar Docker
+4.	En un terminal (o command prompt) descargar el contenedor de PySpark 2.0:
+		“docker pull ezamir/jupyter-spark-2.0”
+5. 	Para correr el contenedor por primera vez ejecutar en el terminal “docker run -d -p 8888:8888 --name=NOMBRECONTENEDOR -e GRANT_SUDO=yes ezamir/jupyter-spark-2.0” 
+6.   Ir a un navegador de internet y escribir en la barra: “localhost:8888”
+
+
+Para parar la ejecución del contenedor “docker stop NOMBRECONTENEDOR”
+Para iniciar nuevamente (luego de la primera vez) “docker start NOMBRECONTENEDOR”
+Puede que en Linux tenga que ejecutar los comandos con “sudo”
+
+Si quiere analizar todas las opciones de Docker ingresar a la documentación
+https://docs.docker.com
+
+Para ver todas las opciones de este docker en particular ingresar a 
+https://github.com/jupyter/docker-stacks/tree/master/pyspark-notebook
+
+Si quiere saber con más detalle de que trata docker ver el video en el siguiente link:
+https://www.youtube.com/watch?v=pGYAg7TMmp0 (video corto)
+https://www.youtube.com/watch?v=Q5POuMHxW-0 (video largo)
+
+Cualquier problema que tengas escribir a hector.allende@pucv.cl
+ 
+Inicio
+docker start kakar00t 507f440574b5
+Terminar 
+docker stop kakar00t 507f440574b5
+
+LISTAR DOCKERS 
+docker  ps -l
+Eliminar un docker
+docker rm <nombre | id>
+
+lets go work!
